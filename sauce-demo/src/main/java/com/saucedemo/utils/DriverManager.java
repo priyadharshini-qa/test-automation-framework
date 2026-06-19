@@ -39,7 +39,7 @@ public class DriverManager {
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
                 FirefoxOptions ffOptions = new FirefoxOptions();
-                if (headless) ffOptions.addArguments("--headless=n");
+                if (headless) ffOptions.addArguments("--headless=new");
                 webDriver = new FirefoxDriver(ffOptions);
                 break;
             case "edge":
